@@ -10,7 +10,6 @@ const weather = require('weather-js');
 const bot = new Discord.Client();
 
 
-
 //requiring commands out of the command folder
 const fs = require("fs");
 bot.commands = new Discord.Collection();
@@ -73,6 +72,7 @@ bot.login(token);
 bot.on("message", message =>{
     if (message.channel.type == "dm" && message.author.id != "252091777115226114") return; //ignores dms
     //ignore these channels (mainly study channels)
+    //this was specifically written exruciatingly bad because epic funny
     if(message.channel.id == "755401302032515074") return;
     if(message.channel.id == "755401370596671520") return;
     if(message.channel.id == "755401537706000534") return;
@@ -82,11 +82,11 @@ bot.on("message", message =>{
  
 
     //Minor commands
-    if (message.content.toLowerCase() == ".creator"){
+    if (message.content.toLowerCase() == ",creator"){
         message.reply("My creator is the pussy ass bitch Dramine7");
-    }else if(message.content.toLowerCase() == ".sourcecode"){
+    }else if(message.content.toLowerCase() == ",sourcecode"){
         message.reply('**Go to this link to see my brain... You are gross and perverted now :)**' + '\n https://github.com/Dramine7/ShadowBot/index.js');
-    }else if(message.content.toLowerCase() == ".invite"){
+    }else if(message.content.toLowerCase() == ",invite"){
         bot.users.cache.get(`${message.author.id}`).send("**Here is the permanent Invite Link:** https://discord.gg/WXskmcN");
     }
     //general consts needed

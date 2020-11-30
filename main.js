@@ -1,4 +1,5 @@
 // First Edit: 01.10.2020 - Synad
+// Last Edit: 30.11.2020 - Synad
 
 //require discord.js package
 //npm install discord.js

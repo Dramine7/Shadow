@@ -8,31 +8,12 @@
 		"ecmaVersion": 2019
 	},
 	"rules": {
-		"comma-dangle": ["error", "always-multiline"],
-		"comma-spacing": "error",
-		"comma-style": "error",
-		"curly": ["error", "multi-line", "consistent"],
-		"dot-location": ["error", "property"],
+
+		"no-empty": "off",
 		"handle-callback-err": "off",
-		"max-nested-callbacks": ["error", { "max": 4 }],
-		"max-statements-per-line": ["error", { "max": 2 }],
 		"no-console": "off",
-		"no-floating-decimal": "error",
-		"no-inline-comments": "error",
-		"no-lonely-if": "error",		
-		"no-shadow": ["error", { "allow": ["err", "resolve", "reject"] }],
-        "no-var": "error",
-        "no-unused-var": "off",
-		"prefer-const": "error",
-		"semi": ["error", "always"],
-		"space-before-function-paren": ["error", {
-			"anonymous": "never",
-			"named": "never",
-			"asyncArrow": "always"
-		}],
-		"space-in-parens": "error",
-		"space-infix-ops": "error",
-		"space-unary-ops": "error",
-		"yoda": "error"
+		"no-unused-vars": "off"
+		
+	
 	}
 }

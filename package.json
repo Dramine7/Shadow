@@ -19,6 +19,7 @@
   "homepage": "https://github.com/Dramine7/Shadow#readme",
   "dependencies": {
     "discord.js": "^12.3.1",
-    "eslint": "^7.10.0"
+    "eslint": "^7.10.0",
+    "weather-js": "^2.0.0"
   }
 }

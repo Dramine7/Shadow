@@ -2,7 +2,7 @@ function actions(message, splitted, Discord, channel, iduser) {
         var embed = new Discord.MessageEmbed()
         const { hug, selfhug, pat, selfpat, kiss, selfkiss, slap, selfslap } = require("../generic/jsons/action.json");
         
-        //HA
+        
         //declare arrays and strings we can later use 
         var action = [];
         var selfaction = [];
